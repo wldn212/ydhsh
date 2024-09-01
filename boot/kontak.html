@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Wisata</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="asset/Ethiopia.svg" alt="Bootstrap" width="60" height="30">
+        </a>
+          <a class="navbar-brand" href="#">EthiopiaTour</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://youtu.be/xvFZjo5PgG0?si=wFXFetGgLqTUqjpM">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="kegiatan.html">Kegiatan</a></li>
+                  <li><a class="dropdown-item" href="galeri.html">Gallery</a></li>
+                  <li><a class="dropdown-item" href="kontak.html">Kontak</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="tentang.html">About us</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav aria-label="breadcrumb" class="mt-4">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+                <li class="breadcrumb-item"><a href="kontak.html">Kontak</a></li>
+            </ol>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Kontak Kami</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Registration Form -->
+                <h4>Formulir Pendaftaran</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Alamat</label>
+                        <textarea class="form-control" id="address" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">No Telepon</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Jenis Kelamin</label><br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male" class="form-label">Laki-laki</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female" class="form-label">Perempuan</label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="activity" class="form-label">Jenis Kegiatan</label>
+                        <select class="form-select" id="activity" required>
+                            <option value="" disabled selected>Pilih Kegiatan</option>
+                            <option value="beach">Mewing</option>
+                            <option value="camping">Mogging</option>
+                            <option value="trekking">Sigma</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <!-- Feedback Form -->
+                <h4>Masukkan Saran & Kritik</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="feedbackName" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="feedbackName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="feedbackEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="feedbackEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="feedbackMessage" class="form-label">Saran dan Kritik</label>
+                        <textarea class="form-control" id="feedbackMessage" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Office Map -->
+    <div class="container my-5">
+        <h4 class="text-center">Lokasi Kantor Kami</h4>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252230.25579706702!2d38.61333194102652!3d8.963140369578253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAdis%20Ababa%2C%20Etiopia!5e0!3m2!1sid!2sid!4v1725183440501!5m2!1sid!2sid" width=1115" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+      </li>
+  </ul>
+</nav>
+
+<footer class="bg-gray text-center text-lg-start mt-5">
+  <div class="container p-4">
+      <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Rekreasi Seru (Banget)</h5>
+              <p>
+                Kami menyediakan yang tidak tersedia
+              </p>
+          </div>
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-end">
+              <h5 class="text-uppercase">Diharamkan untuk menghubungi kami</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#!" class="text-dark">Email: ##################</a></li>
+                  <li><a href="#!" class="text-dark">Telepon: ##################</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="text-center p-3 bg-dark text-white" style="width: 100%; position: absolute; left: 0; margin-bottom: 0;">
+      © 2024 EthiopiaTour, We do not care.
+  </div>
+</footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
